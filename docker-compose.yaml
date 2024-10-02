@@ -1,0 +1,7 @@
+services:
+  app:
+    image: my-php-app
+    restart: always
+    volumes:
+      - .:/usr/src/myapp
+    entrypoint: ["/bin/sleep", "infinity"]
